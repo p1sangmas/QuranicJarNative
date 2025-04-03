@@ -1,8 +1,8 @@
 # QuranicJar (Native Version) 🕌✨
 
-QuranicJar is a SwiftUI-based iOS application that predicts a user's emotion based on their input and provides a relevant Quranic verse for guidance and comfort. The app now uses a locally integrated Core ML `.mlmodel` for emotion classification, eliminating the need for a backend API.
+QuranicJar is a SwiftUI-based iOS application that predicts a user's emotion based on their input and provides a relevant Quranic verse for guidance and comfort. The app now uses a locally integrated Core ML `.mlmodel` for emotion classification, eliminating the need for a backend API. The Core ML model was trained locally on Macbook Pro M1 using Apple's Create ML.
 
-![image](./showcase/3.png)
+![image](./showcase/main.png)
 
 ## Table of Contents
 - [Features](#features)
@@ -16,7 +16,7 @@ QuranicJar is a SwiftUI-based iOS application that predicts a user's emotion bas
 
 ## Features
 
-![image2](./showcase/4.png)
+![image2](./showcase/main2.png)
 
 - **Emotion Prediction**: Users can input their feelings, and the app predicts their emotion using a Core ML model.
 - **Supported Emotions**: As for now, there are 4 supported emotions which are **anger**, **fear**, **joy**, and **sadness**.
