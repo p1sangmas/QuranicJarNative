@@ -38,17 +38,17 @@ QuranicJar is a SwiftUI-based iOS application that predicts a user's emotion bas
 3. **`WelcomeView.swift`**:
    - The initial screen where users are greeted and asked to enter their name.
 
-4. **`EmotionClassifier.mlmodel`**:
+4. **`QuranClassifier.mlmodel`**:
    - A Core ML model fine-tuned for emotion classification.
    - Maps predicted emotions to Quranic verses using an embedded dataset.
 
-5. **`quran_emotions.json`**:
-   - A JSON file containing Quranic verses mapped to specific emotions.
+5. **`quran_emotions_cleaned_2.csv`**:
+   - A CSV file containing Quranic verses mapped to specific emotions.
 
 ## How It Works
 
 1. The input text is processed by the Core ML model (`EmotionClassifier.mlmodel`) embedded in the app.
-2. The predicted emotion is mapped to a relevant Quranic verse using the `quran_emotions.json` dataset.
+2. The predicted emotion is mapped to a relevant Quranic verse using the `quran_emotions_cleaned_2.csv` dataset.
 3. The app displays the predicted emotion and the corresponding Quranic verse to the user.
 
 ---
