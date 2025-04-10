@@ -9,6 +9,7 @@ QuranicJar is a SwiftUI-based iOS application that predicts a user's emotion bas
 - [File Description](#file-descriptions)
 - [How it Works](#how-it-works)
 - [How to Run the Project](#how-to-run-the-project)
+- [Current Results](#current-results)
 - [Future Enhancements](#future-enhancements)
 - [Contributions](#contributions)
 - [Acknowledgments](#acknowledgments)
@@ -87,8 +88,32 @@ QuranicJar is a SwiftUI-based iOS application that predicts a user's emotion bas
 
 ---
 
+## Current Results
+
+### Model Performance
+
+![result](./showcase/quranjar_result.png)
+
+The Core ML model (`QuranClassifier.mlmodel`) was trained using Apple's Create ML with the `quran_emotions_cleaned_2.csv` dataset. Below are the key metrics from the training process:
+
+- **Training Accuracy**: 58.2%
+- **Validation Accuracy**: 58.2%
+- **Iterations Completed**: 10
+
+The model demonstrates moderate performance, which is expected given the limited dataset size and the complexity of emotion classification tasks. The training and validation accuracies being equal suggest that the model is not overfitting, but there is room for improvement in overall accuracy.
+
+### Observations
+
+1. **Dataset Size**: The dataset used for training (`quran_emotions_cleaned_2.csv`) may not have been large or diverse enough to capture the nuances of emotion classification effectively.
+2. **Emotion Categories**: The model currently supports only four emotions: **anger**, **fear**, **joy**, and **sadness**. Expanding the emotion categories could improve the app's utility.
+3. **Accuracy**: While the model is functional, the accuracy is relatively low for practical use in real-world scenarios. This could impact the reliability of emotion predictions.
+
+---
+
 ## Future Enhancements
 
+- Expand the dataset by collecting more data to improve the diversity and size of the training dataset.
+- Experiment with different machine learning algorithms or architectures to improve accuracy.
 - Add support for more emotions and Quranic verses.
 - Improve the emotion prediction model with additional training data.
 - Enhance the UI/UX of the iOS app.
